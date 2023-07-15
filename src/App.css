@@ -1,0 +1,88 @@
+.header{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    height: 7em;
+}
+
+.container{
+    display: flex;
+    background-color: aquamarine;
+    margin: 40px 40px;
+    height: 40em;
+    min-height: 60em;
+}
+
+.container__interaction{
+    width: 80%;
+    height: 40px;
+}
+
+.container__search{
+    margin: 30px;
+    height: 30px;
+    width: 20em;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.container__link{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 20em;
+    margin: 10px;
+    text-decoration: none;
+    background-color: darkgreen;
+    color: #fff;
+    height: 3em;
+    line-height: 3em;
+    width: 8em;
+}
+
+.container__inside{
+    border-left: 6px solid #fff;
+    padding: 40px;
+}
+
+.container__inside-btn{
+    display: block;
+    margin-bottom: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    font-size: 20px;
+}
+
+.container__section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-top: 5px solid black;;
+    position: absolute;
+    padding: 30px;
+    margin: 30px;
+    width: 65%;
+    height: 115%;
+    min-height: auto;
+    top: 270px;
+    overflow: auto;
+}
+
+section div{
+    
+    border: 5px solid #fff;
+    width: 10em;
+    height: 10em;
+}
+
+.footer{
+    display: flex;
+    background-color: black;
+    color: #fff;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
