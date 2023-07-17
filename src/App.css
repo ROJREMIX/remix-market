@@ -1,16 +1,25 @@
-.header{
+.header {
     background-color: black;
     color: #fff;
     padding: 10px;
     height: 7em;
-}
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  
 
 .container{
     display: flex;
     background-color: aquamarine;
+    position: absolute;
     margin: 40px 40px;
-    height: 40em;
-    min-height: 60em;
+    width: 94%;
+    top: 8em;
+    height: 60em;
+    min-height: 40em;
+    z-index: 0;
 }
 
 .container__interaction{
@@ -18,28 +27,6 @@
     height: 40px;
 }
 
-.container__search{
-    margin: 30px;
-    height: 30px;
-    width: 20em;
-    border: none;
-    border-radius: 5px;
-    outline: none;
-}
-
-.container__link{
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    left: 20em;
-    margin: 10px;
-    text-decoration: none;
-    background-color: darkgreen;
-    color: #fff;
-    height: 3em;
-    line-height: 3em;
-    width: 8em;
-}
 
 .container__inside{
     border-left: 6px solid #fff;
@@ -56,33 +43,33 @@
     font-size: 20px;
 }
 
-.container__section{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    border-top: 5px solid black;;
-    position: absolute;
-    padding: 30px;
-    margin: 30px;
-    width: 65%;
-    height: 115%;
-    min-height: auto;
-    top: 270px;
-    overflow: auto;
-}
-
-section div{
-    
-    border: 5px solid #fff;
-    width: 10em;
-    height: 10em;
-}
-
 .footer{
     display: flex;
+    position: absolute;
+    bottom: -80%;
+    width: 100%;
     background-color: black;
     color: #fff;
     height: 50px;
     align-items: center;
     justify-content: center;
 }
+
+
+/*Barra lateral principal*/
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #2E2E2E;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

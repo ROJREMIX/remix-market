@@ -1,4 +1,8 @@
 import './App.css';
+import { Login } from './componets/buttons';
+import { CreateAcount } from './componets/buttons';
+import Search from './componets/search';
+import Products from './componets/products';
 
 function App() {
   return (
@@ -6,23 +10,25 @@ function App() {
 
       <header className='header'>
         <h1 className='header__title'>Remix Shop</h1>
+        <div className='header__link'>
+          <Login/>
+          <CreateAcount/>
+        </div>
+        
       </header>
 
       <main className="container">
-        <div className="container__interaction">
-          <input className="container__search" type="text" placeholder="Búsqueda" autoComplete="off"/>
-          <a className="container__link container__link--login" href="#">Iniciar sesión</a>
-          <a className="container__link container__link--createAccount" href="#">Crear cuenta</a>
-        </div>
+        
+          <Search/>
+          
+        
 
         <div className="container__inside">
           <button className="container__inside-btn container__inside-btn--price">Precio</button>
           <button className="container__inside-btn container__inside-btn--categories">Categoría</button>
         </div>
 
-        <section className='container__section'>
-          
-        </section>
+        <Products/>
       </main>
 
     <footer className='footer'>

@@ -1,0 +1,41 @@
+.product{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    border-top: 5px solid black;;
+    position: absolute;
+    padding: 30px;
+    margin: 30px;
+    width: 68%;
+    height: 48em;
+    min-height: auto;
+    top: 5em;
+    overflow: auto;
+}
+
+section div{
+    
+    border: 5px solid #fff;
+    width: 10em;
+    height: 10em;
+}
+
+
+/*Barra lateral*/
+.product::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .product::-webkit-scrollbar-track {
+    background: #2E2E2E;
+  }
+  
+  .product::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .product::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
